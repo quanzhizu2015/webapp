@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7a723cfe-ecef-4e4e-9b4e-c5f423d62848" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1k50DQ8DYps32wS0tBz61DKomxB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="exam.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/webapp/exam.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/webapp/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.exam.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a723cfe-ecef-4e4e-9b4e-c5f423d62848" name="Default Changelist" comment="" />
+      <created>1604975024302</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604975024302</updated>
+      <workItem from="1604975025336" duration="1925000" />
+      <workItem from="1604976984621" duration="71000" />
+      <workItem from="1604977065109" duration="37000" />
+      <workItem from="1605258516687" duration="618000" />
+      <workItem from="1605331822860" duration="25000" />
+      <workItem from="1605331886820" duration="599000" />
+      <workItem from="1605783744444" duration="1305000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="292" y="85" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604975108016">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="292" y="85" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1604975108016" />
+    <state x="512" y="191" key="FileChooserDialogImpl" timestamp="1604977099417">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="512" y="191" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1604977099417" />
+  </component>
+</project>

@@ -1,0 +1,181 @@
+.toolbar {
+	height: 42px;
+	width: 100%;
+	border-bottom: 1px solid #d7d7d7;
+	/*border-bottom: 1px solid #CDE7F1;
+	background: #E0ECFF;*/
+	background-color:#F5F5F5;
+	line-height: 40px;
+	font-size:12px;
+}
+.bgf4{
+	 background: #F4F4F4;
+}
+
+.toolbar a {
+	height:26px; 
+	margin-left:4px;
+	padding:4px 8px;
+	text-decoration: none;
+	color: #666;
+	 
+	background: #fafafa;
+	background-repeat: repeat-x; 
+	background: -webkit-linear-gradient(top, #ffffff 0, #eeeeee 100%);
+	background: -moz-linear-gradient(top, #ffffff 0, #eeeeee 100%);
+	background: -o-linear-gradient(top, #ffffff 0, #eeeeee 100%);
+	background: linear-gradient(to bottom, #ffffff 0, #eeeeee 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,
+		endColorstr=#eeeeee, GradientType=0 );
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;	 
+	border-radius: 5px 5px 5px 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ADADAD;
+}
+
+.toolbar a:FIRST-CHILD {
+	margin-left:8px;
+}
+
+.toolbar .disabled{
+	color:#A0A0A0;	
+	backgroud-color:#d7d7d7;
+	cursor:default;
+}
+.toolbar .disabled:hover{
+	color:#A0A0A0;	
+	backgroud-color:#d7d7d7;
+	cursor:default;
+}
+
+.toolbar a:hover {
+	color: #333;
+	border: 1px solid #777;
+	filter: none;
+}
+
+.toolbar a.icon-blank{
+	background:url('icons/blank.gif') no-repeat 6px center;
+	padding-left:26px;
+}
+.toolbar a.icon-add{
+	background:url('icons/edit_add.png') no-repeat 6px center;
+	padding-left:26px;
+}
+.toolbar a.icon-edit{
+	background:url('icons/pencil.png') no-repeat 6px center;
+	padding-left:26px;
+}
+.toolbar a.icon-clear{
+	background:url('icons/clear.png') no-repeat 6px center;
+	padding-left:26px;
+}
+.toolbar a.icon-remove{
+	background:url('icons/edit_remove.png') no-repeat 6px center;
+	padding-left:26px;
+}
+.toolbar a.icon-save{
+	background:url('icons/filesave.png') no-repeat 6px center;
+	padding-left:26px;
+}
+.toolbar a.icon-cut{
+	background:url('icons/cut.png') no-repeat 6px center;
+	padding-left:26px;
+}
+.toolbar a.icon-ok{
+	background:url('icons/ok.png') no-repeat 6px center;
+	padding-left:26px;
+}
+.toolbar a.icon-no{
+	background:url('icons/no.png') no-repeat 6px center;
+	padding-left:26px;
+}
+.toolbar a.icon-cancel{
+	background:url('icons/cancel.png') no-repeat 6px center;
+	padding-left:26px;
+}
+.toolbar a.icon-reload{
+	background:url('icons/reload.png') no-repeat 6px center;
+	padding-left:26px;
+}
+.toolbar a.icon-search{
+	background:url('icons/search.png') no-repeat 6px center;
+	padding-left:26px;
+}
+.toolbar a.icon-print{
+	background:url('icons/print.png') no-repeat 6px center;
+	padding-left:24px;
+}
+.toolbar a.icon-help{
+	background:url('icons/help.png') no-repeat 6px center;
+	padding-left:26px;
+}
+.toolbar a.icon-undo{
+	background:url('icons/undo.png') no-repeat 6px center;
+	padding-left:26px;
+}
+.toolbar a.icon-redo{
+	background:url('icons/redo.png') no-repeat 6px center;
+	padding-left:26px;
+}
+.toolbar a.icon-back{
+	background:url('icons/back.png') no-repeat 6px center;
+	padding-left:26px;
+}
+.toolbar a.icon-sum{
+	background:url('icons/sum.png') no-repeat 6px center;
+	padding-left:26px;
+}
+.toolbar a.icon-tip{
+	background:url('icons/tip.png') no-repeat 6px center;
+	padding-left:26px;
+}
+.toolbar a.icon-filter{
+	background:url('icons/filter.png') no-repeat 6px center;
+	padding-left:26px;
+}
+.toolbar a.icon-man{
+	background:url('icons/man.png') no-repeat 6px center;
+	padding-left:26px;
+}
+.toolbar a.icon-lock{
+	background:url('icons/lock.png') no-repeat 6px center;
+	padding-left:26px;
+}
+.toolbar a.icon-paper{
+	background:url('icons/paper.gif') no-repeat 6px center;
+	padding-left:26px;
+}
+.toolbar a.icon-calendar{
+	background:url('icons/calendar.gif') no-repeat 6px center;
+	padding-left:26px;
+}
+.toolbar a.icon-up{
+	background:url('icons/up.gif') no-repeat 6px center;
+	padding-left:26px;
+}
+.toolbar a.icon-down{
+	background:url('icons/down.gif') no-repeat 6px center;
+	padding-left:26px;
+}
+.toolbar a.icon-logout{
+	background:url('icons/logout.gif') no-repeat 6px center;
+	padding-left:26px;
+}
+.toolbar a.icon-process{
+	background:url('icons/process.gif') no-repeat 6px center;
+	padding-left:26px;
+}
+.toolbar a.icon-print{
+	background:url('icons/print.png') no-repeat 6px center;
+	padding-left:26px;
+}
+
+.toolbar a.icon-barcode{
+	background:url('icons/barcode.jpg') no-repeat 6px center;
+	padding-left:26px;
+}
+

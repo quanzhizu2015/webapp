@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+<!-- <link rel="stylesheet" type="text/css" href="css/LoginStyle.css" /> -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/config.js"></script>
+
+<title>TOP美术模考系统</title>
+
+<script language="javascript" type="text/javascript">
+	//修改的学生记录id
+	var updateId = null;
+
+	if (window.top.location != window.location)
+		window.top.location.href = window.location.href;
+	//获取表单元素id
+	function f(id) {
+		return document.getElementById(id);
+	}
+	//点击Enter光标定位下一个表单元素
+	function focusNext(id) {
+		if (event.keyCode == 13) {
+			f(id).focus();
+		}
+	}
+
+	function focusBtn(id) {
+		if (event.keyCode == 13) {
+			f(id).click();
+		}
+	}
+
+	//清空表单
+	function clearInput() {
+		updateId = null;
+		$("#txtTicket").val("");
+		$("#txtStuName").val("");
+		$("#txtStudioName").val("");
+		$("#txtSuMiao").val(0);
+		$("#txtSuXie").val(0);
+		$("#txtSeCai").val(0);
+		$("#txtSheJi").val(0);
+		//指定焦点
+		f("txtTicket").focus();
+	}
+
+	//Enter执行查询
+	function enterToQuery() {
+		if (event.keyCode == 13) {
+			getStuScore();
+		}
+	}
+
+	//获取考生信息
+	function getStuScore() {
+		var ticket = $("#txtTicket").val();
+		if (!ticket || ticket.length == 0)
+			return;
+		// 查询条件			
+		var params = {
+			"ticket" : ticket
+		};
+		config.ajax.post(config.model.rootPath().web
+				+ "/scoreController/getStuScore", params, function(result) {
+			if (0 == result.code && result.data) {
+				updateId = result.data.id;
+				$("#txtStuName").val(result.data.姓名);
+				$("#txtStudioName").val(result.data.画室);
+				$("#txtSuMiao").val(result.data.素描);
+				$("#txtSuXie").val(result.data.速写);
+				$("#txtSeCai").val(result.data.色彩);
+				$("#txtSheJi").val(result.data.设计);
+				$("#txtSuMiao").focus();
+			} else {
+				$("#divMsg").html("没有查询到数据");
+			}
+		});
+	}
+
+	//保存考生分数
+	function updateScore() {
+		var suMiao = $("#txtSuMiao").val();
+		var suXie = $("#txtSuXie").val();
+		var seCai = $("#txtSeCai").val();
+		var sheJi = $("#txtSheJi").val();
+		if (suMiao.length == 0 || suXie.length == 0 || seCai.length == 0
+				|| sheJi.length == 0) {
+			$("#divMsg").html("请输入分数。");
+			return;
+		}
+		// 查询条件			
+		var params = {
+			"id" : updateId,
+			"素描" : suMiao,
+			"速写" : suXie,
+			"色彩" : seCai,
+			"设计" : sheJi
+		};
+		config.ajax.post(config.model.rootPath().web
+				+ "/scoreController/updateScore", params, function(result) {
+			if (0 == result.code) {
+				$("#divMsg").html(
+						$("#txtStuName").val() + " 成绩保存成功<br/>等待扫码查询下一位考生");
+				clearInput();
+			} else {
+				$("#divMsg").html(result.message);
+			}
+		});
+	}
+</script>
+<style type="text/css">
+	.login-box{
+		width:800px;
+		margin:10px auto;
+		font-size:20px;
+	}
+	input{
+		font-size:20px;
+	}
+	.inputbox{
+		margin:10px;
+	}
+</style>
+</head>
+
+<body>
+	<div class="body-box"></div>
+	<div class="login-box">
+
+		<div class="login-title">
+			<div class="header_logo">Toparts 美术教师-系统管理</div>
+		</div>
+		<div id="divMsg" style="margin:20px; color:#FF0000;">等待输入……</div>
+		<div class="login-form">
+			<div class="inputbox">
+				<span class="user name">准考证号</span> <input type="text"
+					class="textbox" id="txtTicket" placeholder="请输入准考证号"
+					onkeypress="enterToQuery()" />
+				<button onclick="getStuScore()">确定</button>
+			</div>
+			<div class="inputbox">
+				<span class="user name">姓名</span> <input type="text" class="textbox"
+					id="txtStuName" readonly="readonly" style="border:none;"/>
+			</div>
+			<div class="inputbox">
+				<span class="user name">画室</span> <input type="text" class="textbox"
+					id="txtStudioName" readonly="readonly"  style="border:none;"/>
+			</div>
+			<div class="inputbox">
+				<span class="pasd name">素描</span> <input type="text" class="textbox"
+					id="txtSuMiao" onkeypress="focusNext('txtSuXie');" />
+			</div>
+			<div class="inputbox">
+				<span class="pasd name">速写</span> <input type="text" class="textbox"
+					id="txtSuXie" onkeypress="focusNext('txtSeCai');" />
+			</div>
+			<div class="inputbox">
+				<span class="code name">彩色</span> <input type="text"
+					class="textbox" onkeypress="focusNext('txtSheJi');" id="txtSeCai" />
+			</div>
+			<div class="inputbox">
+				<span class="code name">设计</span> <input type="text"
+					class="textbox" onkeypress="focusBtn('btnSave');" id="txtSheJi" />
+			</div>
+			<div class="btn-box">
+				<input type="button" class="btn" id="btnSave"
+					onclick="updateScore()" value=" 保 存 " /> <input type="button"
+					class="btn" onclick="clearInput()" value="重 置" />
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #F6F9FA;
+    font-size: 24px;
+}
+
+input {
+    font-size: 24px;
+}
+
+.header {
+    height: 95px;
+    width: 100%;
+    background-color: #FFFFFF;
+    text-align: justify;
+}
+
+.logo {
+    width: 30px;
+    height: 28px;
+    display: inline-block;
+    margin-left: 80px;
+}
+
+.title {
+    height: 42px;
+    font-size: 24px;
+    display: inline-block;
+    color: #0F1734;
+    font-family: PingFang-SC-Heavy, PingFang-SC;
+}
+
+.out_bean_button {
+    width: 134px;
+    height: 50px;
+    color: white;
+    background: #204BD6;
+    border-radius: 10px;
+    font-size: 24px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    position: relative;
+    margin-right: 20px;
+    margin-top: 20px;
+    float: right;
+    border: none;
+}
+
+.content {
+    height: 100%;
+    width: 1254px;
+    margin: 0px auto 0px auto;
+}
+
+.content .person_content_image {
+    width: 550px;
+    height: 661px;
+    /*display: inline-block;*/
+    float: left;
+}
+
+.content .person_content_image .person_image {
+    width: 550px;
+    height: 661px;
+    margin-top: 20px;
+}
+
+.content .person_content {
+    width: 655px;
+    height: 661px;
+    /*display: inline-block;*/
+    margin-top: 20px;
+    margin-left: 20px;
+    border: solid 0px #d7d7d7;
+    float: left;
+}
+
+.content .person_content .top_item {
+    width: 655px;
+    background-color: white;
+}
+
+.content .person_content .top_item div {
+    margin-left: 40px;
+}
+
+.content .person_content .top_item .save_button {
+    width: 115px;
+    height: 50px;
+    background: #204BD6;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.item_content {
+    margin-top: 30px;
+}
+
+.content .person_content .bottem_item {
+    width: 655px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.content .person_content .bottem_item .item {
+    margin-left: 40px;
+    display: inline;
+    width: 325px;
+    height: 50px;
+}
+
+.content .person_content .bottem_item .score {
+    width: 80px;
+}
+
+.content .person_content .bottem_item .clear_button {
+    width: 115px;
+    height: 50px;
+    background: #35CE96;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    float: right;
+    margin-right: 20px;
+}
+
+.content .person_content .bottem_item .save_button {
+    width: 115px;
+    height: 50px;
+    background: #204BD6;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    float: right;
+    margin-right: 20px;
+}
